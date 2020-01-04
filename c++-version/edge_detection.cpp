@@ -134,12 +134,6 @@ void printMatrix(float** matrix, int rows, int cols) {
     }
 }
 
-// plots matrix
-void plotMatrix(float** matrix, int rows, int cols) {
-    cv::Mat convMat = cv::Mat(rows, cols, CV_8UC1, matrix);
-    cv::imshow("Display window", convMat);
-}
-
 // saves matrix in list format: [[], [], [], ..., []]
 void saveMatrix(float** matrix, int rows, int cols) {
     ofstream file;
